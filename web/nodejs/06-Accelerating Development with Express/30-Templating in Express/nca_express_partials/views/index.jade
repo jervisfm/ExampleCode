@@ -1,0 +1,26 @@
+h1= title
+p Welcome to #{title}
+
+- var headers = ['Name', 'Irc', 'Twitter', 'Github', 'Location', 'Description'];
+
+table#profiles
+  tr
+    each header in headers
+      th= header
+    each profile, id in profiles
+      tr(id=id)
+       //- Express 2 
+       != partial('row', {collection: profile, as: 'line'})
+       //- Express 3
+         each row in profile
+          td= row
+
+script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')        
+script 
+  setTimeout(function () {
+    $.get('/', function (row) {
+      $('#profiles tbody').append(row);
+    });
+  }, 1500);
+
+

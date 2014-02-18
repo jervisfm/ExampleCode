@@ -1,0 +1,11 @@
+MIME-Version: 1.0
+X-Mailer: Nodemailer (0.3.7; +https://github.com/andris9/Nodemailer)
+Date: Fri, 18 May 2012 18:24:43 GMT
+Message-Id: <1337365483144.6247be84@Nodemailer>
+From: "Definitely Not Spammers" <spamnot@ok.com>
+To: "Bob" <bob@nodecookbook.com>, "Bib" <bib@nodecookbook.com>
+Subject: Your Newsletter
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello! This is your newsletter, :D

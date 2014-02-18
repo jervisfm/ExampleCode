@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<script src=http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js>
+</script>
+<style>
+#frm, #raw {display:block;float:left;width:210px}
+#raw {height:150px;width:310px;margin-left:0.5em;}
+</style>
+</head>
+<body>
+<form id=frm>
+Profile: <select id=profiles><option></option></select> <br>
+Format:<select id=formats>
+		  <option value=json> JSON </option>
+		  <option value=xml> XML </option>
+		  </select> <br> <br>
+<div id=output></div>
+</form>
+
+<textarea id=raw></textarea>
+
+<script src=socket.io/socket.io.js></script>
+<script>
+(function () {
+  var formats = {};
+  formats.json = io.connect('ws://localhost:8080/json');
+  formats.xml = io.connect('ws://localhost:8080/xml');
+
+  formats.json.on('profiles', function (profile_names) {
+    $('#profiles').html('<option></option>');
+    $.each(profile_names, function (i, pname) {
+      $('#profiles').append('<option>' + pname + '</option>');
+    });
+  });
+
+  $('#profiles, #formats').change(function () {
+    var socket = formats[$('#formats').val()];
+    socket.emit('profile', $('#profiles').val());
+  });
+
+
+  formats.json.on('profile', function (profile) {
+    $('#raw').val(profile);
+    $('#output').html('');
+    $.each(profile, function (k, v) {
+      $('#output').append('<b>' + k + '</b> : ' + v + '<br>');
+    });
+  });
+
+  formats.xml.on('profile', function (profile) {
+    $('#raw').val(profile);
+    $('#output').html('');
+    $.each($(profile)[1].nextSibling.childNodes,
+      function (k, v) {
+        if (v && v.nodeType === 1) {
+          $('#output').append('<b>' + v.localName + '</b> : ' + v.textContent + '<br>');
+        }
+      });
+  });
+}());
+
+</script>
+</body>
+</html>

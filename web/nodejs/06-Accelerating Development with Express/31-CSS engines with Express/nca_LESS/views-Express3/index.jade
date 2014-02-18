@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  table#profiles
+    th Name
+    th Irc
+    th Twitter
+    th Github
+    th Location
+    th Description
+    each profile, name in profiles
+      tr(class='user-' + name)
+        td #{profile.name}
+        td #{profile.irc}
+        td #{profile.twitter}
+        td #{profile.github}
+        td #{profile.location}
+        td #{profile.description}

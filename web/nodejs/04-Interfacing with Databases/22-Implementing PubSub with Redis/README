@@ -1,0 +1,10 @@
+In this folder:
+
+quotes_publish.js: Copied from previous recipe, 22-Storing and Retrieving Data with Redis, modified to publish 
+                   each insert to it's PubSub system, setting name of Author as PubSub Channel.
+                   creates and connects to Redis, providing a command line interface for 
+                   inserting quotes, and for finding quotes by author. 
+
+quotes_subscribe.js: The counterpart to quotes_publish.js, subscribes to channels specified via command line 
+                     arguments, channels are authors e.g. node quotes_subscribe.js "Steve Jobs" will listen
+                     for any quotes being inserted that are attributed to Steve Jobs.

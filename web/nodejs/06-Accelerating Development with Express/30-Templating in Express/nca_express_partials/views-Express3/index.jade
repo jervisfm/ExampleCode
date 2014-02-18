@@ -1,0 +1,28 @@
+//- partials are not supported in Express 3, so we simply loop through the rows. 
+
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  - var headers = ['Name', 'Irc', 'Twitter', 'Github', 'Location', 'Description'];
+
+  table#profiles
+    tr
+      each header in headers
+        th= header
+      each profile, id in profiles
+        each row in profile
+          td= row
+
+
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')        
+  script 
+    setTimeout(function () {
+      $.get('/', function (row) {
+        $('#profiles tbody').append(row);
+      });
+    }, 1500);
+
+

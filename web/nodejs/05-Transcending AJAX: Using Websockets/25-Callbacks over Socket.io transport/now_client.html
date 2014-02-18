@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+<div id=output></div>
+<script src="/nowjs/now.js"></script>
+<script>  
+now.ready(function () {  
+  now.base64('base64 me server side, dog', function (msg) {
+    output.innerHTML += '<div>Recieved: ' + msg + '</div>';
+  });
+});
+
+now.square = function (num) {
+  output.innerHTML = "<div>" + num + " x " + num + " is " + (num * num) + "</div>";
+}
+</script>
+</body></html>

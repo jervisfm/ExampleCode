@@ -1,0 +1,35 @@
+How to get the secure_virtual_hosting example locally operational
+
+  If we'd like to test the secure_virtual_hosting example as is, 
+  we'll need to make some adjustments to our system to, first we edit /etc/hosts
+  adding the two domain names, change the top of the /etc/hosts file to
+
+  127.0.0.1  localhost   nodecookbook.com   davidmarkclements.com
+
+  (Don't forget to remove these after, otherwise you wont be able to navigate to those sites!)
+
+  Restart your network with sudo /etc/init.d/networking restart (or restart system if running Windows)
+  
+  Open Firefox 
+    (instructions are only for Firefox, should be able to achieve the same in IE but this wont work in Chrome, 
+      although your mileage may vary)
+  Go to Edit -> Preferences
+  Click the Advanced tab
+  Click View Certificates
+  Go to the Authorities tab
+  Click Import
+  Navigate to this howto directory, and import the CA.pem file
+  
+  Now Firefox will recognise the specially made the Node Cookbook Root CA and the examples will work.
+  
+  Simply start server.js and go to https://nodecookbook.com:8080  and https://davidmarkclements.com:8080
+  for warning-free secure virtual hosting results.
+  
+  Obviously for production this will never do, we need a vendor trusted Certificate Authority, and that means
+  purchasing a certificate and replacing the domains with ones we control.
+  
+
+How to take the secure_virtual_hosting example live
+  We would need to replace the domains (davidmarkclements.com and nodecookbook.com) with ones we control
+  and configure the DNS settings to point at the IP address of a live server running secure_virtual_hosting/server.js
+

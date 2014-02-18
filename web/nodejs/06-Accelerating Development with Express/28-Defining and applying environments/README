@@ -1,0 +1,8 @@
+In this folder:
+
+nca:  An alteration to the generated express app from previous recipe, whereby
+        caching is implemented for production environment, but not for development
+
+nca_staging: A further alteration to nca, where an addition "staging" environment
+              is added, development and staging run on the same port, but production
+              runs on port 80. 

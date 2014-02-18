@@ -1,0 +1,22 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+info using npm@1.0.105
+info using node@v0.6.13
+verbose config file /home/dave/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+ERR! Couldn't read dependencies.
+ERR! Error: ENOENT, open '/home/dave/package.json'
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 2.6.38-15-generic
+ERR! command "node" "/usr/local/bin/npm" "install"
+ERR! cwd /home/dave/Dropbox/Node Cookbook/Code/06-Accelerating Development with Express/30-Templating in Express
+ERR! node -v v0.6.13
+ERR! npm -v 1.0.105
+ERR! path /home/dave/package.json
+ERR! code ENOENT
+verbose exit [ 1, true ]

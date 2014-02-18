@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div id=output></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('ws://localhost:8080'),
+    output = document.getElementById('output'),
+    msg = 'Hello';
+
+  socket.on('connect', function () {
+    socket.send(msg);
+    output.innerHTML += '<div>Sent: ' + msg + '</div>';
+    socket.on('message', function (msg) {
+      output.innerHTML += '<div>Recieved: ' + msg + '</div>';
+
+    });
+  });
+</script>
+</body>
+</html>

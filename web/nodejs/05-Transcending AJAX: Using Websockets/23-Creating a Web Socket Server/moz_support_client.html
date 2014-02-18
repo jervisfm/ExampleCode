@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<div id=output></div>
+
+<script>
+(function () {
+  window.WebSocket = window.WebSocket || window.MozWebSocket;
+  var ws = new WebSocket("ws://localhost:8080"),
+  output = document.getElementById('output'),
+  msg = 'Hello';
+
+  ws.onopen = function () {
+  
+    ws.send(msg);
+    output.innerHTML += '<div>Sent: ' + msg + '</div>';
+  
+
+    ws.onmessage = function (e) {
+      output.innerHTML += '<div>Recieved: ' + e.data + '</div>';
+    };
+
+    ws.onclose = function (e) {
+      output.innerHTML += 'Disconnected: ' + e.code + ' - ' + e.type;
+    };
+
+    ws.onerror = function (e) {
+      output.innerHTML += 'Error: ' + e.data;
+    };
+      
+  };
+  
+}());
+</script>
+</body>
+</html>

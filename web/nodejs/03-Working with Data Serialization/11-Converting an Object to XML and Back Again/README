@@ -1,0 +1,21 @@
+In this folder:
+
+xml_and_back.js: converts an object to XML and back again
+
+xml_and_back_with_arrays_and_functions.js: converts an object to XML and back again with support for arrays and functions in an object.
+
+xml_and_back_with_attributes.js: converts an object to XML and back again with a method for interpretting attributes from an object
+                                 also with support for arrays and functions in an object.
+                                 
+xml_and_back_final.js: converts an object to XML and back again with support for the eplicit charkey (#) as an answer to the issue 
+                       created by supporting attributes, also with attribute, array and function support.
+
+profiles.js: counterpart module object to xml_and_back.js
+
+profiles_with_arrays_and_functions.js: counterpart module object to xml_and_back_with_arrays_and_functions.js
+
+profiles_with_attributes.js: counterpart module object to xml_and_back_with_attributes.js
+
+profiles_final.js: counterpart module object to xml_and_back_final.js
+
+
