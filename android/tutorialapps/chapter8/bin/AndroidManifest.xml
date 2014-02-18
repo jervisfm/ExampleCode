@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cc.dividebyzero.android.cookbook.chapter8"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Chapter8">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListFiles">
+              <intent-filter >
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>          
+        </activity>
+
+        <activity android:name=".audio.AudioPlayback"/>
+        <activity android:name=".audio.AudioRecording"/>
+        <activity android:name=".audio.AudioSoundPool"/>
+        
+        <activity android:name=".video.VideoViewActivity"/>
+        <activity android:name=".video.VideoPlayback"/>    
+        <activity android:name=".image.ImageManipulation"/>
+    </application>
+
+</manifest>

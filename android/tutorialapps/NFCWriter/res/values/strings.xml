@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFCWriter</string>
+    <string name="main_text">Click the button to write NFC data</string>
+    <string name="main_button_text">Write NFC Data</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>

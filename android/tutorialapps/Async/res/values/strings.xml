@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Async</string>
+    <string name="text_main">This app uses AsyncTask to spin up a background thread and handle processing</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
