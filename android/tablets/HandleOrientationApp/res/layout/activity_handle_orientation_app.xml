@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android= "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HandleOrientationAppActivity" >
+    <Button  
+        android:id="@+id/camera"  
+        android:text="Camera"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="20dip" />
+    <Button  
+        android:id="@+id/laptop"  
+        android:text="Laptop"
+        android:textSize="@dimen/text_size"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:padding="28dip"
+        android:layout_toRightOf="@id/camera" 
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentTop="true" />
+    <Button  
+        android:id="@+id/watch"  
+        android:text="Watch"
+        android:textSize="@dimen/text_size"
+        android:layout_width="200dip" 
+        android:layout_height="100dip"    
+        android:layout_marginTop="35dip"  
+        android:layout_below="@id/camera" 
+        android:layout_alignParentLeft="true" />
+    <Button  
+        android:id="@+id/smartphone"  
+        android:text="Smartphone"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content" 
+        android:layout_height="match_parent"    
+        android:minWidth="100dp"
+        android:layout_alignParentRight="true"     
+        android:layout_below="@id/watch" />
+    <Button  
+        android:id="@+id/television"  
+        android:text="Television"
+        android:textSize="@dimen/text_size"
+        android:layout_width="250dip" 
+        android:layout_height="wrap_content"    
+        android:layout_below="@id/watch"
+        android:paddingTop="15dip"     
+        android:paddingLeft="25dip" 
+        android:paddingRight="25dip" />
+</RelativeLayout>

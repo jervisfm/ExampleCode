@@ -1,0 +1,32 @@
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/create"
+        android:title="Create"  
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/create_invoice"
+                android:title="Create Invoice"  />
+            <item android:id="@+id/create_customer"
+                android:title="Create Customer"  />
+            <item android:id="@+id/create_product"
+                android:title="Create Product" 
+                android:checkable="true" />
+        </menu>
+    </item>
+    <item android:id="@+id/update" 
+        android:title="Update" 
+        android:showAsAction="always" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/update_code"
+                    android:title="Update Code" 
+                    android:checked="true" />
+                <item android:id="@+id/update_name"
+                    android:title="Update Name"  />
+                <item android:id="@+id/update_price"
+                    android:title="Update Price" />
+            </group>
+        </menu>
+    </item>
+</menu>

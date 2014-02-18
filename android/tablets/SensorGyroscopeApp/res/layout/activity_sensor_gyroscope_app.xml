@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/xaxisview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X Axis" 
+        android:textSize="@dimen/text_size" 
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/yaxisview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y Axis"
+        android:textSize="@dimen/text_size" 
+        android:textStyle="bold"  />
+    <TextView
+        android:id="@+id/zaxisview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z Axis" 
+        android:textSize="@dimen/text_size" 
+        android:textStyle="bold" />
+    </LinearLayout>

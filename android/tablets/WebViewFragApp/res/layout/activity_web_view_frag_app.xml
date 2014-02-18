@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        android:id="@+id/addressview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:hint="http://"
+        android:scrollHorizontally="true"
+        android:layout_toRightOf="@id/addressview" 
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="Go"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/url"
+        android:padding="10dp" />
+    <fragment android:name= "com.androidtablet.webviewfragapp.WebViewFragmentActivity"
+        android:id="@+id/fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tag="web_fragment"
+    android:layout_below="@id/url" 
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

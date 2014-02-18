@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_popupmenu">
+        <item android:id="@+id/camera"
+            android:title="Camera" />
+        <item android:id="@+id/laptop"
+            android:title="Laptop" />
+        <item android:id="@+id/watch"
+            android:title="Watch" />
+        <item android:id="@+id/smartphone"
+            android:title="Smartphone" />
+        <item android:id="@+id/television"
+            android:title="Television" />
+    </group>
+</menu>

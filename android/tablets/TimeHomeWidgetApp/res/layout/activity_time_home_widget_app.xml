@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" >
+<TextView
+ android:id="@+id/time_textview"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textSize="@dimen/text_size"
+ android:textStyle="bold"
+ android:text="00:00:00"  
+ android:textColor="#ffffff"
+ android:background="#0000ff"
+ android:padding="10dp"
+android:layout_centerHorizontal="true"
+android:layout_centerVertical="true" />
+<Button
+ android:id="@+id/update_button"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="Update Time"
+ android:textSize="@dimen/text_size" 
+ android:layout_below="@id/time_textview"
+ android:layout_marginTop="10dp"/>
+</RelativeLayout>

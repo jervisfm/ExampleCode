@@ -1,0 +1,47 @@
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText
+        android:id="@+id/edittext1" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Enter text in this box"
+        android:minLines="5" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="20dip"
+        android:textSize="@dimen/text_size" />
+    <Button 
+        android:id="@+id/cut_button" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Cut" 
+        android:textSize="@dimen/text_size"
+        android:layout_below="@id/edittext1"  />
+    <Button 
+        android:id="@+id/copy_button" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Copy" 
+        android:textSize="@dimen/text_size"
+        android:layout_below="@id/edittext1"  
+        android:layout_toRightOf="@id/cut_button"/>
+    <Button 
+        android:id="@+id/paste_button" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Paste"  
+        android:textSize="@dimen/text_size"
+        android:layout_below="@id/edittext1" 
+        android:layout_toRightOf="@id/copy_button" />
+    <EditText
+        android:id="@+id/edittext2" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:minLines="5" 
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="20dip"
+        android:layout_below="@id/copy_button" />
+</RelativeLayout>

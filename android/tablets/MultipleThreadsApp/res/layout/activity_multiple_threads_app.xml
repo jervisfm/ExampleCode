@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultipleThreadsAppActivity" >
+    <TextView 
+        android:id="@+id/thread1"  
+        android:text="Thread1"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="20dip" 
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+       <TextView 
+        android:id="@+id/thread2"  
+        android:text="Thread2"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="100dip"
+        android:layout_toRightOf="@id/thread1" 
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"/>
+    <TextView 
+        android:id="@+id/seqnums1"  
+        android:text="0"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="30dip"
+        android:layout_below="@id/thread1" 
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+   <TextView 
+        android:id="@+id/seqnums2"  
+        android:text="0"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15dip"  
+        android:layout_marginLeft="150dip"
+        android:layout_below="@id/thread2"
+        android:layout_toRightOf="@id/seqnums1"  
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

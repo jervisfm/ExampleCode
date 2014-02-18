@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   >
+    <ImageView android:id="@+id/imgview"
+        android:layout_width="@dimen/image_width" 
+        android:layout_height="@dimen/image_height" 
+        android:layout_centerInParent="true" />
+    <ToggleButton
+        android:id="@+id/startstop_button"
+        android:textOn="Stop Animation"
+        android:textOff="Start Animation" 
+        android:textSize="@dimen/text_size" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

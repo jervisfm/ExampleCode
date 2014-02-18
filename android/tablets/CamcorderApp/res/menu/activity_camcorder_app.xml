@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <item android:id="@+id/high_quality_profile"
+        android:title="High Quality" 
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/low_quality_profile"
+        android:title="Low Quality" 
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText" />
+
+
+</menu>

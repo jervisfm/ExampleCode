@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView android:id="@+id/imgview"
+        android:layout_width="@dimen/image_width" 
+        android:layout_height="@dimen/image_height" 
+        android:src="@drawable/ic_launcher"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/alpha_button"
+        android:text="Alpha"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  />
+    <Button
+        android:id="@+id/rotate_button"
+        android:text="Rotate"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/alpha_button" />
+    <Button
+        android:id="@+id/scale_button"
+        android:text="Scale"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+         android:layout_toRightOf="@id/rotate_button" />
+    <Button
+        android:id="@+id/translate_button"
+        android:text="Translate"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/scale_button"  /> 
+</RelativeLayout>

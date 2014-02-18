@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PrefFragmentApp</string>
+    <string name="menu_settings">Settings</string>
+    <string-array name="products">
+        <item>Camera</item> 
+        <item>Laptop</item> 
+        <item>Watch</item> 
+        <item>Smartphone</item> 
+        <item>Television</item> 
+    </string-array> 
+    <string-array name="prodselected"> 
+        <item>You have selected Camera</item> 
+        <item>You have selected Laptop</item> 
+        <item>You have selected Watch</item> 
+        <item>You have selected Smartphone</item> 
+        <item>You have selected Television</item>  
+    </string-array>
+    
+</resources>

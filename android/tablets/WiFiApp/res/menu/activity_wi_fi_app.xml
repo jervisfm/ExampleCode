@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/enable_wifi_btn"
+        android:title="Enable Wi-Fi" 
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/disable_wifi_btn"
+        android:title="Disable Wi-Fi" 
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText" />
+
+</menu>

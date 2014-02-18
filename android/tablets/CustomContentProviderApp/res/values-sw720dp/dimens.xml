@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_size">36sp</dimen>
+    <dimen name="text_size">32sp</dimen>
+        <dimen name="product_width">500dp</dimen>
+    <dimen name="price_width">200dp</dimen>
+</resources>

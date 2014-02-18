@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="https://schemas.android.com/tools" 
+    tools:ignore="TypographyDashes">
+  <!--   Please insert your tracking ID in the below statement -->
+    <string name="ga_trackingId">UA-xxxxxxxx-y</string>  
+    <bool name="ga_autoActivityTracking">true </bool>     
+    <bool name="ga_reportUncaughtExceptions">true </bool> 
+    <bool name="ga_debug">true</bool>    
+</resources>

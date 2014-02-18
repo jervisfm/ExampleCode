@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item android:id="@+id/create"
+        android:title="Create" 
+        android:icon="@drawable/create"
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/update" 
+        android:title="Update" 
+        android:icon="@drawable/update"
+        android:showAsAction="always"  />
+    <item android:id="@+id/list_rows"
+        android:title="List Rows" 
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/search_row"
+        android:title="Search" 
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/delete_row"
+        android:title="Delete"
+        android:showAsAction="never" />
+    <item android:id="@+id/insert_row"
+        android:title="Insert" 
+        android:showAsAction="always"  />
+
+
+</menu>

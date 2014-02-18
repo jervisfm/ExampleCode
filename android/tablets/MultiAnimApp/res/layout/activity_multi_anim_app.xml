@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <ImageView 
+        android:id="@+id/imgview"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="@dimen/image_width" 
+        android:layout_height="@dimen/image_height" 
+        android:layout_marginTop="50dip"  
+        android:layout_marginLeft="50dip" />       
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AnimatorSet Demo"
+        android:id="@+id/textview" 
+        android:textSize="@dimen/text_size" 
+        android:textStyle="bold" 
+        android:layout_marginTop="50dp" 
+        android:layout_toRightOf="@id/imgview"
+      android:layout_marginLeft="50dp" />   
+</RelativeLayout>
